@@ -4,10 +4,10 @@ import gradio as gr
 from dotenv import load_dotenv
 import os
 
-# Load environment variables from .env file
+# Load environment variables from .env file.
 load_dotenv()
 
-# Set the API key from the .env file
+# Set the API key from the .env file. The API key is stored in Github as a secret.
 openai.api_key = os.getenv("OPENAI_API_KEY")
 
 # Initialize TTS engine
